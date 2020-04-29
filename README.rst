@@ -2,22 +2,6 @@
 pytest-mousecolor
 =================
 
-.. image:: https://img.shields.io/pypi/v/pytest-mousecolor.svg
-    :target: https://pypi.org/project/pytest-mousecolor
-    :alt: PyPI version
-
-.. image:: https://img.shields.io/pypi/pyversions/pytest-mousecolor.svg
-    :target: https://pypi.org/project/pytest-mousecolor
-    :alt: Python versions
-
-.. image:: https://travis-ci.org/bigbird/pytest-mousecolor.svg?branch=master
-    :target: https://travis-ci.org/bigbird/pytest-mousecolor
-    :alt: See Build Status on Travis CI
-
-.. image:: https://ci.appveyor.com/api/projects/status/github/bigbird/pytest-mousecolor?branch=master
-    :target: https://ci.appveyor.com/project/bigbird/pytest-mousecolor/branch/master
-    :alt: See Build Status on AppVeyor
-
 Show the test status on the color of your RGB mouse
 
 **WARNING: Logitech RGB mouse (or RGB keyboard) is needed!!!**
