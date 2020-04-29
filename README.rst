@@ -30,19 +30,20 @@ This `pytest`_ plugin was generated with `Cookiecutter`_ along with `@hackebrot`
 Features
 --------
 
-When initializing the mouse color change to yellow,
+When initializing then the mouse color change to yellow,
 meaning that no test was executed.
-When the first test pass mouse color will be green.
-When any of the tests fail then mouse will be red,
-and it will stay red.
-So at the end you will see immediately what was the
-overall result of your test.
+When the first test pass then the mouse color will be green.
+When any of the tests fail then mouse will be red, and
+it will stay red.
+So during test run, you will see immediately what the
+overall result of your test is.
 
 Options are:
 
 --mousecolor_wait
     At the end of the test it will pause and wait
     for user confirmation with the Enter key.
+    Useful for long tests, keeping the result indication.
 
 --mousecolor_nowait
     Quit at the end immediately. Not blocking, but
@@ -51,6 +52,7 @@ Options are:
 
 Note: using this plugin adds 1+1 sec wait to your
 test execution time.
+
 
 Requirements
 ------------
@@ -86,6 +88,18 @@ License
 
 Distributed under the terms of the `MIT`_ license, "pytest-mousecolor" is free and open source software
 
+
+Author
+------
+
+:Author:
+    BigBirdCode
+
+:Version:
+    0.1 of 2020 Apr 29
+
+:Homepage:
+    https://github.com/bigbirdcode/pytest-mousecolor
 
 Issues
 ------
