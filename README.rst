@@ -20,6 +20,8 @@ pytest-mousecolor
 
 Show the test status on the color of your RGB mouse
 
+**WARNING: Logitech RGB mouse (or RGB keyboard) is needed!!!**
+
 ----
 
 This `pytest`_ plugin was generated with `Cookiecutter`_ along with `@hackebrot`_'s `cookiecutter-pytest-plugin`_ template.
@@ -28,14 +30,34 @@ This `pytest`_ plugin was generated with `Cookiecutter`_ along with `@hackebrot`
 Features
 --------
 
-* TODO
+When initializing the mouse color change to yellow,
+meaning that no test was executed.
+When the first test pass mouse color will be green.
+When any of the tests fail then mouse will be red,
+and it will stay red.
+So at the end you will see immediately what was the
+overall result of your test.
 
+Options are:
+
+--mousecolor_wait
+    At the end of the test it will pause and wait
+    for user confirmation with the Enter key.
+
+--mousecolor_nowait
+    Quit at the end immediately. Not blocking, but
+    unfortunately mouse color will revert to the
+    default color. This is a limitation in the SDK.
+
+Note: using this plugin adds 1+1 sec wait to your
+test execution time.
 
 Requirements
 ------------
 
-* TODO
-
+- Logitech RGB mouse or keyboard
+- Logitech driver / SDK / gamings software installed
+- logipy Python module
 
 Installation
 ------------
@@ -48,12 +70,16 @@ You can install "pytest-mousecolor" via `pip`_ from `PyPI`_::
 Usage
 -----
 
-* TODO
+Use it as any other Pytest plugin.
+
+For example:
+``pytest --mousecolor_wait``
 
 Contributing
 ------------
-Contributions are very welcome. Tests can be run with `tox`_, please ensure
-the coverage at least stays the same before you submit a pull request.
+
+Contributions are very welcome.
+
 
 License
 -------
